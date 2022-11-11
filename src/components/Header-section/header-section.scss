@@ -1,0 +1,54 @@
+.header-section {
+  background-image: url("../../image/image00004.jpeg");
+  contain: content;
+  width: 100%;
+  background-size: cover;
+  z-index: 10;
+  height: 100vh;
+
+  &::after {
+    content: "";
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  hr {
+    background-color: #dd9939;
+    color: #dd9939;
+    transform: rotate(90deg);
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    left: -100px;
+    border: 2px;
+    bottom: -200px;
+    z-index: 20;
+  }
+
+  .wrapper-section {
+    display: flex;
+    justify-content: flex-start;
+    height: 70vh;
+    align-items: flex-end;
+    max-width: 1100px;
+    margin: 0 auto;
+    z-index: 999;
+    position: relative;
+
+    .info {
+      img {
+        width: 400px;
+      }
+
+      p {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+  }
+}

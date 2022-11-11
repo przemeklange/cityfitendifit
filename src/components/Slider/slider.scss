@@ -1,0 +1,114 @@
+.header-section-slider {
+  background-image: url("../../image/image00003.jpeg");
+  contain: content;
+  width: 100%;
+  background-size: cover;
+  z-index: 10;
+  padding: 130px 0;
+
+  &::after {
+    content: "";
+    background-color: rgba($color: #000000, $alpha: 0.68);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .slide-container {
+    display: flex;
+    max-width: 1444px;
+    margin: 0 auto;
+    z-index: 999;
+    position: relative;
+    min-height: 490px;
+
+    .f1 {
+      width: 35%;
+    }
+
+    .f2 {
+      width: 65%;
+      overflow: hidden;
+
+      .react-slideshow-container {
+        color: #fff;
+        padding: 30px 0;
+
+        .default-nav {
+          width: 50px;
+          height: 50px;
+        }
+
+        .default-nav:first-of-type {
+          top: 430px;
+          left: 20px;
+          position: absolute;
+          background: transparent;
+          fill: #dd9939;
+        }
+
+        .nav:last-of-type {
+          top: 430px;
+          left: 100px;
+          position: absolute;
+          background: transparent;
+          fill: #dd9939;
+          box-shadow: 0 0 0 0 rgba(#dd9939, 1);
+          transform: scale(1);
+          animation: pulse-black 2s infinite;
+        }
+
+        @keyframes pulse-black {
+          0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0  rgba(#dd9939, .7);
+          }
+
+          70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px  rgba(#dd9939, 0);
+          }
+
+          100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0  rgba(#dd9939, 0);
+          }
+        }
+
+        .sliderStyle {
+          padding: 20px 40px;
+          margin: 20px;
+          background-color: rgba($color: #000000, $alpha: 0.8);
+          transition: 0.3s all;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgba($color: #dd9939, $alpha: 1);
+          }
+
+          h3 {
+            font-size: 35px;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 35px;
+            margin: 20px 0;
+          }
+
+          p {
+            font-size: 16px;
+            font-weight: 300;
+          }
+
+          .price {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 500;
+            padding-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}
