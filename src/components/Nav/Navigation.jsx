@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./navigation.scss";
 import logo from "../../image/logo-preloader.png";
 import insta from "../../image/instagram.svg";
@@ -16,14 +16,83 @@ const Navigation = () => {
         <div className="nav__menu">
           <ul>
             <li>
-              <NavLink to="/" end>
+              <Link
+                activeClass="active"
+                to="top"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={2000}
+              >
                 Główna
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink to="/kontakt">Kontakt</NavLink>
+              <Link
+                activeClass="active"
+                to="aboutme"
+                spy={true}
+                smooth={true}
+                duration={2000}
+              >
+                O mnie
+              </Link>
             </li>
-            <li><a href="https://github.com"><img src={insta} alt="" /></a></li>
+            <li>
+              <Link
+                activeClass="active"
+                to="offers"
+                spy={true}
+                smooth={true}
+                duration={2000}
+              >
+                Pakiety
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="gallery"
+                spy={true}
+                smooth={true}
+                duration={2000}
+              >
+                Galeria
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={2000}
+              >
+                Kontakt
+              </Link>
+            </li>
+            <li>
+              <a href="https://github.com">
+                <img src={insta} alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="nav__menu-mobile">
+          <ul>
+            <li>
+              <Link to="/" end>
+                Główna
+              </Link>
+            </li>
+            <li>
+              <Link to="/kontakt">Kontakt</Link>
+            </li>
+            <li>
+              <a href="https://github.com">
+                <img src={insta} alt="" />
+              </a>
+            </li>
           </ul>
         </div>
       </div>

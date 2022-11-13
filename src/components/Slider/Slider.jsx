@@ -32,7 +32,7 @@ const Slider = () => {
   ];
 
   return (
-    <div className="header-section-slider">
+    <div className="header-section-slider" id="offers">
       <div className="slide-container">
         <div className="f1">x</div>
         <div className="f2">

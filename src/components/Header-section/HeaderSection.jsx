@@ -4,7 +4,7 @@ import logo from "../../image/logo-preloader.png";
 
 const HeaderSection = () => {
   return (
-    <div className="header-section">
+    <div className="header-section" id="top">
       <div className="wrapper-section">
         <div className="info">
           <img src={logo} alt="" />

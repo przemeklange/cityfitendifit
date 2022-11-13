@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMe from "../../components/AboutMe/AboutMe";
+import Contact from "../../components/Contact/Contact";
 import Gallery from "../../components/Gallery/Gallery";
 import HeaderSection from "../../components/Header-section/HeaderSection";
 import Navigation from "../../components/Nav/Navigation";
@@ -23,8 +24,9 @@ const Home = () => {
           percent="100%"
           percenttext="zadowolonych podopiecznych"
         />
-        <Slider/>
-        <Gallery/>
+        <Slider />
+        <Gallery />
+        <Contact />
       </div>
     </>
   );

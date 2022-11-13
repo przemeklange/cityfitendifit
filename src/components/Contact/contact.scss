@@ -1,0 +1,18 @@
+.header-section-contact {
+    background-image: url("../../image/image00001.jpeg");
+    contain: content;
+    width: 100%;
+    background-size: cover;
+    z-index: 10;
+    height: 100vh;
+  
+    &::after {
+      content: "";
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+}

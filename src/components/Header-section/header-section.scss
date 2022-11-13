@@ -52,3 +52,24 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .header-section {
+    height: auto;
+    padding: 400px 20px 200px 20px;
+
+    .wrapper-section {
+      hr {
+        display: none;
+      }
+
+      height: auto;
+
+      .info {
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

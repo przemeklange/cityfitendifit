@@ -1,28 +1,10 @@
 import React from "react";
 import "./aboutme.scss";
-import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import image1 from '../../image/image00001.jpeg'
-
 
 const AboutMe = (props) => {
-  const slideImages = [
-    {
-      img: image1,
-    },
-    {
-      img: image1,
-    },
-    {
-      img: image1,
-    },
-    {
-      img: image1,
-    },
-  ];
-
   return (
-    <div className="header-section-about">
+    <div className="header-section-about" id="aboutme">
       <div className="wrapper-section">
         <hr />
         <div className="text-info">

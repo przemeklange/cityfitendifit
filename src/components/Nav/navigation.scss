@@ -59,4 +59,18 @@
       }
     }
   }
+
+  .nav__menu-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__menu-mobile {
+    display: block;
+  }
 }
