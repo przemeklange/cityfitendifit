@@ -13,11 +13,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .menu-bobile-button {
+      display: none;
+    }
   }
 
   &__logo-wrapper {
     img {
       width: 175px;
+      cursor: pointer;
     }
   }
 
@@ -51,6 +56,7 @@
           font-weight: 500;
           transition: 0.2s all;
           font-size: 14px;
+          cursor: pointer;
 
           &:hover {
             color: #fff;
@@ -60,17 +66,80 @@
     }
   }
 
-  .nav__menu-mobile {
+  .nav-menu__mobile {
     display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .nav {
+    padding: 20px 10px;
+  }
+
   .nav__menu {
     display: none;
   }
 
-  .nav__menu-mobile {
-    display: block;
+  .menu-bobile-button {
+    svg {
+      fill: #fff;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+  }
+
+  .nav-menu__mobile {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    color: #fff;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .active {
+      color: #dd9939;
+    }
+
+    img {
+      width: 32px;
+    }
+
+    #close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      svg {
+        fill: #fff;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      flex-direction: column;
+      padding: 0;
+
+      li {
+        padding: 15px 0;
+        font-size: 23px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
   }
 }

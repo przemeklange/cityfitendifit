@@ -1,5 +1,5 @@
 .header-section-about {
-  background-image: url("../../image/image00001.jpeg");
+  background-image: url("../../image/image00001.jpg");
   contain: content;
   width: 100%;
   background-size: cover;
@@ -35,7 +35,7 @@
     right: 0;
 
     img {
-        width: 300px;
+      width: 300px;
     }
   }
 
@@ -91,6 +91,36 @@
               font-size: 14px;
               padding-top: 20px;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-section-about {
+    .wrapper-section {
+      padding: 0 20px;
+      .text-info {
+        h2 {
+          font-size: 50px;
+          line-height: 50px;
+          padding: 50px 5px 20px 5px;
+        }
+         
+        p {
+          font-size: 16px;
+          line-height: 30px;
+          width: auto;
+        }
+
+        .text-infor-wrapper {
+          flex-direction: column;
+          padding: 30px 0 50px; 
+
+          .section {
+            padding: 15px 0;
           }
         }
       }

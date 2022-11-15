@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import FirstPerson from "./pages/Meta/FirstPerson";
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="adamkowalski" element={<FirstPerson />} />
           </Routes>
         </BrowserRouter>
       </div>

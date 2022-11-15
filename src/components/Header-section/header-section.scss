@@ -1,5 +1,5 @@
 .header-section {
-  background-image: url("../../image/image00004.jpeg");
+  background-image: url("../../image/image00004.jpg");
   contain: content;
   width: 100%;
   background-size: cover;
@@ -56,9 +56,10 @@
 @media screen and (max-width: 600px) {
   .header-section {
     height: auto;
-    padding: 400px 20px 200px 20px;
 
     .wrapper-section {
+      padding: 300px 20px 200px 20px;
+
       hr {
         display: none;
       }
